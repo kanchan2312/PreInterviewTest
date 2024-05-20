@@ -1,0 +1,62 @@
+=============TASK 4============
+
+Review comments marked below along with the code in each line:
+
+01. public LinkedList findInsurersForPolicy (Policy p, boolean debug)  //Parameter 'debug' has not been used anywhere, need to be removed
+02. {
+03.     ArrayList l = new ArrayList(); //Provide parametrized type for this generic. Also incorrect naming convention 'l'
+04.     ArrayList list = getAllPolicies();
+05.     for (int i=0; i&lt;list.size(); i++) {
+06.         Insurer insurer = (Insurer) list.get(0); //Revisit this call. Do we need to fetch just Ist element of the list? or all the list elements?
+07.         boolean found = false;
+08.         if (insurer.getPolicies().size() &gt; 0) {
+09.             for (int j=0; j&lt;=insurer.getPolicies().size(); j++)
+                    {
+10.                     Policy p2 = insurer.getPolicies().get(j);
+11.                     found = (p2 == p);
+12.                 }
+13.                 if (found &amp;&amp; insurer != null) //Insurer null check should be checked after line 6
+14.                 l.add(insurer);
+15.         }
+16.     }
+17.     return new LinkedList(l);
+18. }
+
+
+=============TASK 5============
+
+With enterprise applications, some of the trends that have emerged over the past few years are:
+-> Rapid adoption of cloud-native architectures(leveraging services like serverless computing, managed databases, and scalable infrastructure provided by cloud providers
+such as AWS, Azure, and Google Cloud)
+-> increasing shift towards microservices and containerization.
+-> Event-driven applications
+-> AI technology
+
+Benefits:
+-> Microservices break down applications into smaller, independently deployable services that can be developed, tested, and deployed separately.
+This approach facilitates continuous delivery and deployment, enhances scalability, and allows for better fault isolation and faster recovery from failures.
+Organizations can scale individual services independently based on demand, optimizing resource usage and cost.
+
+-> Containers, managed by orchestration tools like Kubernetes, encapsulate applications and their dependencies, ensuring consistency across development, testing,
+and production environments.
+
+Preparing for the Trend by:
+-> Utilizing online resources and courses to stay updated with the latest Java development trends and technologies.
+-> Engaged in activities that allowed me to develop skills relevant to my professional growth.
+-> Got chance to get some hands-on experience in past assignments on these emerging technologies. Worked on migration of legacy system (built in Ember, Spring MVC) to
+ a modern java environment using latest technologies (Webservices, React).
+
+=============TASK 6============
+One of the most impactful projects I worked on was the re-design and development of Credit Card application for HSBC banking system.
+The primary goal was to improve customer engagement, streamline sales processes, and enhance overall user experience. This project delivered high value to the users by
+addressing their specific needs and challenges.
+Objective:
+Improve customer engagement and retention.
+Enhance user experience for both employees and customers.
+
+
+=========TASK 7============
+I take ownership for proactively managing risk.
+I look for ways for continuous learning and improvement; staying current with new tools, technologies, and best practices is crucial.
+Have strong collaboration and communication skills.
+Always try to deliver high-quality work.
